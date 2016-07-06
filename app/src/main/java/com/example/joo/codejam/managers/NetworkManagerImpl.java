@@ -1,7 +1,5 @@
 package com.example.joo.codejam.managers;
 
-import android.util.Log;
-
 import com.example.joo.codejam.models.UserAccessToken;
 import com.google.gson.Gson;
 
@@ -24,13 +22,11 @@ public class NetworkManagerImpl implements NetworkManager {
     private static final String CLIENT_ID = "MjlkZjFlZDItMjM3MS00MmE3LWJiZjEtMjA1YTAzMDVmMWJk";
     private static final String CLIENT_SECRET = "ODc1MzVkMjMtYTg3YS00MDE4LTg3ZTgtYWE2MjRkY2I0NjE5";
 
-    OkHttpClient client = new OkHttpClient();
+    final OkHttpClient client = new OkHttpClient();
     UserAccessToken userAccessToken;
 
     @Override
     public UserAccessToken getUserToken(String emailAddress, String password) {
-        Log.d("getUserToken", "in");
-
         // {"grant_type"}: "password"
         // {"username"} : "ohootkk@gmail.com"
         // {"password"} : "Qwas1234"
