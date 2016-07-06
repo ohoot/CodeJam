@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">코드 잼</string>
+    <string name="btn_login">로그인</string>
+    <string name="edit_email">이메일 주소</string>
+    <string name="edit_password">비밀번호</string>
+    <string name="login_success">로그인에 성공하였습니다</string>
+</resources>
